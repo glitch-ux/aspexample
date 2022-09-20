@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="login-page">
+
+        <div class="form">
+            <img src="/images/Logo_NOESIS.png" alt="noesis_logo" class="logo_noesis" />
+            <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address" />
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                      <input type="text" placeholder="name" id="username"/>
+                <input type="password" placeholder="password" id="password"/>
+                <button onclick="javascript:validate()">login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+      $('.message a').click(function(){
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
+
+
+        function Redirect() {
+               window.location="/home";
+            }
+
+ 
+
+    function validate()
+{
+    if(   document.getElementById("username").value == "admin"
+       && document.getElementById("password").value == "admin" )
+    {
+        //alert( "validation succeeded" );
+         setTimeout('Redirect()', 0);
+    }
+    else
+    {
+        alert( "validation failed" );
+        //location.href="fail.html";
+    }
+}
+  </script>
+</body>
+</html>

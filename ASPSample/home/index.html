@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Get Started with Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body style="background-color: white;">
+
+    <div style="margin-top:10%;">
+
+        <div class="col-xs-12 col-sm-5">
+
+            <div style="margin-left:20%; margin-top:10%;">
+                <a href="http://www.noesis.pt/"><img style="max-width:60%;" src="../images/Logo_NOESIS.png" alt="noesis_logo" /></a>                
+                <div style="margin-top:5%;">
+                    <h4 style="color:#337ab7; font-weight:bold;">Lisbon · Porto · Coimbra</h4>
+                    <h4 style="color:#337ab7; font-weight:bold;">Brussels · São Paulo · Dublin · Rotterdam</h4>
+                    <div>
+                        <a href="https://www.facebook.com/NoesisPortugal?fref=ts" target="_blank"><i class="fa fa-facebook-square fa-2x fa_color"></i></a>
+                        <a href="https://twitter.com/noesis_portugal" target="_blank"><i class="fa fa-twitter-square fa-2x fa_color"></i></a>
+                        <a href="https://www.linkedin.com/company/noesis-portugal" target="_blank"><i class="fa fa-linkedin-square fa-2x fa_color"></i></a>
+                    </div>
+                </div>
+
+                <div style="margin-top:10%;">
+                    <div id="devops" style="display:block; margin-right:5%;" onmousedown="show">
+                        <h3 style="color:#404040; font-weight:bold; margin-bottom:2%; text-align:justify;">"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."</h3>
+                        <h4 style="color:#404040; font-weight:bold; float:right;">(Donovan Brown)</h4>
+                    </div>
+                    <div id="devops_plan" style="display:none;" onmousedown="show">
+                        <h2 style="color:#19838e; font-weight:bold; margin-bottom:2%;">Plan</h2>
+                        <ul class="formated_ul">
+                            <li class="plan"><span>Software Configuration Management</span></li>
+                            <li class="plan"><span>Build Management</span></li>
+                            <li class="plan"><span>Service Virtualization</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="devops_create" style="display:none;" onmousedown="show">
+                        <h2 style="color:#8b9b29; font-weight:bold; margin-bottom:2%;">Create</h2>
+                        <ul class="formated_ul">
+                            <li class="create"><span>Test Automation</span></li>
+                            <li class="create"><span>Static Analysis</span></li>
+                            <li class="create"><span>CERT/UAT/Regression Tests</span></li>
+                            <li class="create"><span>Security & Performance Tests</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="devops_verify" style="display:none;" onmousedown="show">
+                        <h2 style="color:#3737aa; font-weight:bold; margin-bottom:2%;">Verify</h2>
+                        <ul class="formated_ul">
+                            <li class="verify"><span>Artifacts Management</span></li>
+                            <li class="verify"><span>Continuous Integration</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="devops_package" style="display:none;" onmousedown="show">
+                        <h2 style="color:#3fa9f5; font-weight:bold; margin-bottom:2%;">Package</h2>
+                        <ul class="formated_ul">
+                            <li class="package"><span>Release Management</span></li>
+                            <li class="package"><span>Application Release Automation</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="devops_release" style="display:none;" onmousedown="show">
+                        <h2 style="color:#f15a24; font-weight:bold; margin-bottom:2%;">Release</h2>
+                        <ul class="formated_ul">
+                            <li class="release"><span>Infrastruture Provisioning</span></liclass="release">
+                            <li class="release" style="margin-left:5%;"><span>Cloud</span></li>
+                            <li class="release" style="margin-left:5%;"><span>Containers</span></li>
+                            <li class="release" style="margin-left:5%;"><span>Service Virtualization</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="devops_configure" style="display:none;" onmousedown="show">
+                        <h2 style="color:#9263ab; font-weight:bold; margin-bottom:2%;">Configure</h2>
+                        <ul class="formated_ul">
+                            <li class="configure"><span>Infrastructure Performance</span></li>
+                            <li class="configure"><span>User experience</span></li>
+                            <li class="configure"><span>Production Metrics/statistics</span></li>
+                            <li class="configure"><span>Continuous Operations</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="devops_monitor" style="display:none;" onmousedown="show">
+                        <h2 style="color:#aa2e2e; font-weight:bold; margin-bottom:2%;">Monitor</h2>
+                        <ul class="formated_ul">
+                            <li class="monitor"><span>Application Insights</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-xs-12 col-sm-7">
+
+            <img style="margin-left:5%; margin-top: 7%;" src="../images/rsz_devops-toolchainsvg_.png" alt="" usemap="#map" />
+            <map name="map">
+                <area id="area1" shape="poly" coords="392, 224, 385, 279, 355, 321, 400, 360, 459, 387, 453, 346, 477, 307, 434, 288, 404, 259" />
+                <area id="area2" shape="poly" coords="213, 7, 195, 47, 211, 89, 242, 95, 268, 111, 292, 135, 307, 181, 308, 147, 326, 104, 348, 75, 321, 49, 282, 25, 245, 11" />
+                <area id="area3" shape="poly" coords="610, 223, 647, 248, 692, 241, 671, 297, 645, 329, 601, 365, 542, 389, 497, 393, 467, 388, 463, 346, 486, 309, 517, 312, 561, 298, 590, 272, 605, 244" />
+                <area id="area4" shape="poly" coords="544, 9, 553, 53, 526, 88, 559, 99, 591, 129, 614, 176, 613, 211, 653, 240, 695, 232, 695, 196, 690, 151, 672, 107, 642, 63, 602, 31" />
+                <area id="area5" shape="poly" coords="350, 184, 308, 204, 315, 151, 335, 103, 368, 61, 426, 22, 471, 9, 536, 8, 542, 52, 515, 88, 478, 88, 443, 102, 416, 127, 395, 160, 390, 202" />
+                <area id="area6" shape="poly" coords="195, 309, 213, 349, 195, 392, 237, 388, 282, 374, 322, 347, 349, 320, 377, 276, 391, 212, 351, 195, 308, 212, 298, 255, 263, 292, 225, 309" />
+                <area id="area7" shape="poly" coords="3, 198, 45, 214, 86, 197, 86, 220, 99, 256, 133, 292, 186, 309, 201, 353, 185, 391, 129, 380, 78, 351, 33, 302, 12, 256, 4, 227" />
+                <area id="area8" shape="poly" coords="200, 6, 181, 46, 201, 86, 147, 95, 108, 129, 86, 185, 51, 202, 7, 187, 18, 132, 43, 83, 83, 43, 130, 17, 178, 6" />
+            </map>
+
+        </div>
+
+    </div>
+
+
+   
+
+
+
+    <!--
+    <div style="">
+        <div class="col-xs-12 col-sm-8 left_footer">
+            <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 right_footer">
+            fafawfaw
+        </div>
+    </div>
+    -->
+
+
+
+
+
+                <script>
+
+                    function show1() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_plan').style.display = "block"; }
+                    function hide1() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_plan').style.display = "none"; }
+                    var div1 = document.getElementById('area1');
+                    div1.onmouseover = show1;
+                    div1.onmouseout = hide1;
+
+                    function show2() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_plan').style.display = "block"; }
+                    function hide2() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_plan').style.display = "none"; }
+                    var div2 = document.getElementById('area2');
+                    div2.onmouseover = show2;
+                    div2.onmouseout = hide2;
+
+                    function show3() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_monitor').style.display = "block"; }
+                    function hide3() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_monitor').style.display = "none"; }
+                    var div3 = document.getElementById('area3');
+                    div3.onmouseover = show3;
+                    div3.onmouseout = hide3;
+
+                    function show4() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_configure').style.display = "block"; }
+                    function hide4() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_configure').style.display = "none"; }
+                    var div4 = document.getElementById('area4');
+                    div4.onmouseover = show4;
+                    div4.onmouseout = hide4;
+
+                    function show5() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_release').style.display = "block"; }
+                    function hide5() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_release').style.display = "none"; }
+                    var div5 = document.getElementById('area5');
+                    div5.onmouseover = show5;
+                    div5.onmouseout = hide5;
+
+                    function show6() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_package').style.display = "block"; }
+                    function hide6() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_package').style.display = "none"; }
+                    var div6 = document.getElementById('area6');
+                    div6.onmouseover = show6;
+                    div6.onmouseout = hide6;
+
+                    function show7() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_verify').style.display = "block"; }
+                    function hide7() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_verify').style.display = "none"; }
+                    var div7 = document.getElementById('area7');
+                    div7.onmouseover = show7;
+                    div7.onmouseout = hide7;
+
+                    function show8() { document.getElementById('devops').style.display = "none"; document.getElementById('devops_create').style.display = "block"; }
+                    function hide8() { document.getElementById('devops').style.display = "block"; document.getElementById('devops_create').style.display = "none"; }
+                    var div8 = document.getElementById('area8');
+                    div8.onmouseover = show8;
+                    div8.onmouseout = hide8;
+
+                </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
